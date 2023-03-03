@@ -8,17 +8,15 @@ Gem::Specification.new do |spec|
   spec.authors = ["Nora Alvarado"]
   spec.email = ["nora.alvarado@hey.com"]
 
-  spec.summary = "Write a short summary, because RubyGems requires one."
-  spec.description = "Write a longer description or delete this line."
-  spec.homepage = "https://example.com"
+  spec.summary = "Arda is an ActiveRecord Extension to deprecate attributes"
+  spec.description = "Arda (activerecord deprecated attribute) provides a straightforward and unobtrusive method for flagging deprecated attributes in your model. When these attributes are accessed, a warning message will be logged along with a trace of where the deprecated attribute was called. Additionally, an exception can be raised if desired."
+  spec.homepage = "https://github.com/aromaron/arda"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.0.0"
 
-  spec.metadata["allowed_push_host"] = "https://example.com"
-
   spec.metadata["homepage_uri"] = "https://example.com"
-  spec.metadata["source_code_uri"] = "https://example.com"
-  spec.metadata["changelog_uri"] = "https://example.com"
+  spec.metadata["source_code_uri"] = "https://github.com/aromaron/arda"
+  spec.metadata["changelog_uri"] = "https://github.com/aromaron/arda/blob/main/CHANGELOG.md"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
