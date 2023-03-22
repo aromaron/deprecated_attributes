@@ -1,6 +1,13 @@
 # frozen_string_literal: true
 
+require "pry"
+
 require "arda"
+
+require "support/active_record"
+
+require "dummy/models/user"
+require "dummy/models/person"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
