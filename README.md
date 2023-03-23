@@ -1,6 +1,6 @@
-# Arda
+# Arda (WIP)
 
-Arda (activerecord deprecated attribute) provides a straightforward and unobtrusive method for flagging deprecated attributes in your model. When these attributes are accessed, a deprecation warning message will be logged. Additionally, an exception can be raised if desired along with a trace of where the deprecated attribute was called.
+**This is a work in progress and learning exercise** Arda (activerecord deprecated attribute) provides a straightforward and unobtrusive method for flagging deprecated attributes in your model. When these attributes are accessed, a deprecation warning message will be logged. Additionally, an exception can be raised if desired along with a trace of where the deprecated attribute was called.
 
 ## Installation
 
