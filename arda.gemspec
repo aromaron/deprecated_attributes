@@ -35,12 +35,12 @@ Gem::Specification.new do |spec|
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html
 
-  spec.add_dependency "activesupport"
+  spec.add_dependency "activesupport", "~> 7.0.0"
 
-  spec.add_development_dependency "activerecord"
-  spec.add_development_dependency "pry"
+  spec.add_development_dependency "activerecord", "~> 7.0.0"
+  spec.add_development_dependency "pry", "~> 0.14.2"
   spec.add_development_dependency "rake", "~> 13.0"
   spec.add_development_dependency "rspec", "~> 3.0"
-  spec.add_development_dependency "sqlite3"
+  spec.add_development_dependency "sqlite3", "~> 1.6.0"
   spec.add_development_dependency "standard", "~> 1.3"
 end
