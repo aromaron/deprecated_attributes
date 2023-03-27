@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.0.0"
 
-  spec.metadata["homepage_uri"] = "https://example.com"
+  spec.metadata["homepage_uri"] = "https://github.com/aromaron/deprecated_attributes"
   spec.metadata["source_code_uri"] = "https://github.com/aromaron/deprecated_attributes"
   spec.metadata["changelog_uri"] = "https://github.com/aromaron/deprecated_attributes/blob/main/CHANGELOG.md"
 
