@@ -1,6 +1,6 @@
-# Arda (WIP)
+# DeprecatedAttributes (WIP)
 
-**This is a work in progress and learning exercise** Arda (activerecord deprecated attribute) provides a straightforward and unobtrusive method for flagging deprecated attributes in your model. When these attributes are accessed, a deprecation warning message will be logged. Additionally, an exception can be raised if desired along with a trace of where the deprecated attribute was called.
+**This is a work in progress and learning exercise** DeprecatedAttributes provides a straightforward and unobtrusive method for flagging deprecated attributes in your model. When these attributes are accessed, a deprecation warning message will be logged. Additionally, an exception can be raised if desired along with a trace of where the deprecated attribute was called.
 
 ## Installation
 
@@ -16,7 +16,7 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
 ## Configuration
 
-You can use the configure method and pass a block that takes a config parameter. Within this block, you can set various options for Arda.
+You can use the configure method and pass a block that takes a config parameter. Within this block, you can set various options for DeprecatedAttributes.
 
 `enable:` Set this option to true to enable some feature.
 
@@ -31,7 +31,7 @@ Example usage:
 ```ruby
 # default values
 
-Arda.configure do |config|
+DeprecatedAttributes.configure do |config|
   config.enable = true
   config.full_trace = false
   config.raise = false
@@ -50,7 +50,7 @@ end
 ```ruby
 
 class User < ActiveRecord::Base
-  include Arda
+  include DeprecatedAttributes
 
   # this works
   deprecated_attribute :first_name, message: "name was deprecated in favor of name"
@@ -80,8 +80,8 @@ end
     => DEPRECATION WARNING: `first_name` is deprecated. Was called on User with args: []
     => DEPRECATION DETAILS: first_name was deprecated in favor of name
 
-    # if Arda.configuration.raise = true
-    => Arda::DeprecatedAttributeError: Arda::DeprecatedAttributeError
+    # if DeprecatedAttributes.configuration.raise = true
+    => DeprecatedAttributes::DeprecatedAttributeError: DeprecatedAttributes::DeprecatedAttributeError
 
 
 
@@ -94,7 +94,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/aromaron/arda. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/aromaron/arda/blob/main/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/aromaron/deprecated_attributes. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/aromaron/deprecated_attributes/blob/main/CODE_OF_CONDUCT.md).
 
 ## License
 
@@ -102,4 +102,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the Arda project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/aromaron/arda/blob/main/CODE_OF_CONDUCT.md).
+Everyone interacting in the DeprecatedAttributes project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/aromaron/deprecated_attributes/blob/main/CODE_OF_CONDUCT.md).

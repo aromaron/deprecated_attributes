@@ -2,7 +2,7 @@
 
 require "pry"
 
-require "arda"
+require "deprecated_attributes"
 
 require "support/active_record"
 

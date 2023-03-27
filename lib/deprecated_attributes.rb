@@ -3,15 +3,15 @@
 require "active_support"
 require "active_record"
 
-require_relative "arda/version"
-require_relative "arda/errors"
-require_relative "arda/configuration"
-require_relative "arda/active_record_extension"
+require_relative "deprecated_attributes/version"
+require_relative "deprecated_attributes/errors"
+require_relative "deprecated_attributes/configuration"
+require_relative "deprecated_attributes/active_record_extension"
 
 require "notifiers/rails_logger"
 
 # Active Record Deprecated Attribute Module
-module Arda
+module DeprecatedAttributes
   extend ActiveSupport::Concern
 
   included do
@@ -80,9 +80,9 @@ module Arda
       ActiveSupport::Notifications.instrument("deprecated_attributes.active_record", payload)
     end
 
-    # Raises a DeprecatedAttributeError if Arda is configurated to do so.
+    # Raises a DeprecatedAttributeError if DeprecatedAttributes is configurated to do so.
     def raise_deprecated_attribute
-      raise DeprecatedAttributeError if Arda.configuration.raise
+      raise DeprecatedAttributeError if DeprecatedAttributes.configuration.raise
     end
 
     private

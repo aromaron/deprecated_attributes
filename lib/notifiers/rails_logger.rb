@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
 # Extend Rails logger
-module Arda
+module DeprecatedAttributes
   # Log Subscriber
   class LogSubscriber < ActiveSupport::LogSubscriber
     def logger_config
-      Arda.configuration.rails_logger || {}
+      DeprecatedAttributes.configuration.rails_logger || {}
     end
 
     def log_color(text, color, bold: true)
@@ -41,4 +41,4 @@ module Arda
   end
 end
 
-Arda::LogSubscriber.attach_to :active_record if Arda.configuration.enable
+DeprecatedAttributes::LogSubscriber.attach_to :active_record if DeprecatedAttributes.configuration.enable

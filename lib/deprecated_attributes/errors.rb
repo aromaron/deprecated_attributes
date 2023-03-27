@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
-module Arda
+module DeprecatedAttributes
   class DeprecatedAttributeError < StandardError; end
 end

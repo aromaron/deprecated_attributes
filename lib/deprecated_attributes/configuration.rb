@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-# Configuration for Arda
-module Arda
+# Configuration for DeprecatedAttributes
+module DeprecatedAttributes
   def self.configuration
     @configuration ||= Configuration.new
   end

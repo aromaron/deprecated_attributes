@@ -1,22 +1,22 @@
 # frozen_string_literal: true
 
-require_relative "lib/arda/version"
+require_relative "lib/deprecated_attributes/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "arda"
-  spec.version = Arda::VERSION
+  spec.name = "deprecated_attributes"
+  spec.version = DeprecatedAttributes::VERSION
   spec.authors = ["Nora Alvarado"]
   spec.email = ["nora.alvarado@hey.com"]
 
-  spec.summary = "Arda is an ActiveRecord Extension to deprecate attributes"
-  spec.description = "Arda (activerecord deprecated attribute) provides a straightforward and unobtrusive method for flagging deprecated attributes in your model. When these attributes are accessed, a warning message will be logged along with a trace of where the deprecated attribute was called. Additionally, an exception can be raised if desired."
-  spec.homepage = "https://github.com/aromaron/arda"
+  spec.summary = "DeprecatedAttributes is library to deprecate attributes"
+  spec.description = "DeprecatedAttributes provides a straightforward and unobtrusive method for flagging deprecated attributes in your model. When these attributes are accessed, a warning message will be logged along with a trace of where the deprecated attribute was called. Additionally, an exception can be raised if desired."
+  spec.homepage = "https://github.com/aromaron/deprecated_attributes"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.0.0"
 
   spec.metadata["homepage_uri"] = "https://example.com"
-  spec.metadata["source_code_uri"] = "https://github.com/aromaron/arda"
-  spec.metadata["changelog_uri"] = "https://github.com/aromaron/arda/blob/main/CHANGELOG.md"
+  spec.metadata["source_code_uri"] = "https://github.com/aromaron/deprecated_attributes"
+  spec.metadata["changelog_uri"] = "https://github.com/aromaron/deprecated_attributes/blob/main/CHANGELOG.md"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.

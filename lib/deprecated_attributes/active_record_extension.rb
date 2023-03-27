@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
 require "active_record"
-require "arda"
+require "deprecated_attributes"
 
 # rubocop:disable Style/ClassAndModuleChildren
 # Override ActiveRecord arttribute_methods
 class ActiveRecord::Base
-  include Arda
+  include DeprecatedAttributes
 
   def attribute_names
     self.class.attribute_names.reject { |attr| self.class.deprecated_attributes.include?(attr.to_sym) }

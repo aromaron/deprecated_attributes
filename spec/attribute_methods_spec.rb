@@ -2,9 +2,9 @@
 
 require "spec_helper"
 # rubocop:disable Metrics/BlockLength
-RSpec.describe Arda do
+RSpec.describe DeprecatedAttributes do
   before do
-    Arda.configuration.raise = false
+    DeprecatedAttributes.configuration.raise = false
   end
 
   describe "Attribute Methods" do

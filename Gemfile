@@ -2,5 +2,5 @@
 
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in arda.gemspec
+# Specify your gem's dependencies in deprecated_attributes.gemspec
 gemspec
