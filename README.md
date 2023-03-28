@@ -1,5 +1,10 @@
 # DeprecatedAttributes (WIP)
 
+[![Rspec](https://github.com/aromaron/deprecated_attributes/actions/workflows/rspec.yml/badge.svg)](https://github.com/aromaron/deprecated_attributes/actions/workflows/rspec.yml)
+[![StandardRB](https://github.com/aromaron/deprecated_attributes/actions/workflows/standardrb.yml/badge.svg)](https://github.com/aromaron/deprecated_attributes/actions/workflows/standardrb.yml)
+[![Ruby Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://github.com/testdouble/standard)
+[![Gem Version](https://badge.fury.io/rb/deprecated_attributes.svg)](https://badge.fury.io/rb/deprecated_attributes)
+
 **This is a work in progress and learning exercise** 
 
 DeprecatedAttributes provides a straightforward and unobtrusive method for flagging deprecated attributes in your model. When these attributes are accessed, a deprecation warning message will be logged. Additionally, an exception can be raised if desired along with a trace of where the deprecated attribute was called.
